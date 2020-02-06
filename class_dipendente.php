@@ -11,7 +11,6 @@ class Dipendente
     public $matricola;
     public $assunto_il;
     public $dimesso_il;
-    public $reparto;
     public $tipo_contratto;
     public $titolo_studio;
     public $salario_base;
