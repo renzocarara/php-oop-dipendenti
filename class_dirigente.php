@@ -1,4 +1,7 @@
 <?php
+// descrizione:
+// definizione della classe figlia Dirigente
+
 include_once 'class_dipendente.php';
 
 class Dirigente extends Dipendente
@@ -9,7 +12,7 @@ class Dirigente extends Dipendente
 
     public function __construct($_cognome, $_nome, $_matricola)
     {
-        // cognome e  nome sono attributi della trait 'Persona'
+        // cognome e nome sono attributi della trait 'Persona'
         // matricola è un attributo della classe padre 'Dipendente'
         // richiamo il costruttore della classe padre con i suoi parametri
         parent::__construct($_cognome, $_nome, $_matricola);

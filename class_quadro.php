@@ -1,4 +1,6 @@
 <?php
+// descrizione:
+// definizione della classe figlia Quadro
 include_once 'class_dipendente.php';
 
 class Quadro extends Dipendente

@@ -1,5 +1,8 @@
 <?php
-
+// descrizione:
+// in questo file sono definite le carttaeristiche base associabili ad una persona,
+// verranno utilizzate dalla classe 'Dipendente'
+// ha 2 metodi per stampare a video alcuni attributi
 trait Persona
 {
     public $cognome;

@@ -1,4 +1,9 @@
 <?php
+// descrizione:
+// definizione della classe figlia Operaio,
+// usa la trait Imp_Op, che contiene caratteristiche comuni
+// a questa classe e alla classe Impiegato
+
 include_once 'class_dipendente.php';
 include_once 'trait_imp_op.php';
 

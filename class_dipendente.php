@@ -1,4 +1,7 @@
 <?php
+// descrizione:
+// definizione della classe padre Dipendente, da questa derivano 4 classi figlie:
+// Dirigente, Impiegato, Quadro e Operaio
 
 include_once 'trait_persona.php';
 

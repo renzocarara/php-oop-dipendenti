@@ -1,6 +1,9 @@
 <?php
+// descrizione
 // classe padre: Dipendente (usa trait Persona),
 // classi figlie: Dirigente, Quadro, Impiegato (usa trait Imp_Op), Operaio (usa trait Imp_Op)
+// creo delle istanze delle 4 classi Dirigente, Quadro, Impiegato e Operaio
+// chiamo alcuni metodi per stampare a video delle info
 
 include_once 'class_dirigente.php';
 include_once 'class_quadro.php';
@@ -19,7 +22,7 @@ $dir_1 -> bonus=10000;
 $dir_1 -> telefono="3393672666";
 $dir_1 -> email="paolo.rossi@aziendax.com";
 $dir_1 -> indirizzo="via Piaccapi 7, Boolandia";
-// stampo delgli attributi specifici di Persona
+// stampo gli attributi specifici di Persona
 $dir_1 -> stampaDettaglioAnagrafica();
 $dir_1 -> stampaDettaglioContatti();
 
