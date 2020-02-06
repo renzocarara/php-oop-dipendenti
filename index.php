@@ -1,8 +1,6 @@
 <?php
-
 // classe padre: Dipendente (usa trait Persona),
 // classi figlie: Dirigente, Quadro, Impiegato (usa trait Imp_Op), Operaio (usa trait Imp_Op)
-
 
 include_once 'class_dirigente.php';
 include_once 'class_quadro.php';
@@ -25,7 +23,7 @@ $dir_1 -> indirizzo="via Piaccapi 7, Boolandia";
 $dir_1 -> stampaDettaglioAnagrafica();
 $dir_1 -> stampaDettaglioContatti();
 
-// racchiudo questa chiamata a funzione in una try & catch
+// racchiudo questa chiamata a funzione in una try & catch per gestire l'eccezione
 try{
     $dir_1 -> calcolaStipendio();
 } catch (Exception $eccezione_stipendio){
@@ -50,7 +48,7 @@ $imp_1 -> indirizzo="via Laravel 10, Boolandia";
 $imp_1 -> stampaDettaglioAnagrafica();
 $imp_1 -> stampaDettaglioContatti();
 
-// racchiudo questa chiamata a funzione in una try & catch
+// racchiudo questa chiamata a funzione in una try & catch per gestire l'eccezione
 try{
     $imp_1 -> calcolaStipendio();
 } catch (Exception $eccezione_stipendio){
@@ -63,7 +61,7 @@ $ope_1 = new Operaio("Giorgio", "Giallo", "DD9411");
 
 // stampo gli attributi anagrafici
 $ope_1 -> stampaDettaglioAnagrafica();
-// racchiudo questa chiamata a funzione in una try & catch
+// racchiudo questa chiamata a funzione in una try & catch per gestire l'eccezione
 try{
     $ope_1 -> calcolaStipendio();
 } catch (Exception $eccezione_stipendio){
@@ -73,7 +71,7 @@ try{
 // creo un oggetto di classe Quadro
 $qua_1 = new Quadro("Marco", "Verdi", "FQ8831");
 $qua_1 -> stampaDettaglioAnagrafica();
-// racchiudo questa chiamata a funzione in una try & catch
+// racchiudo questa chiamata a funzione in una try & catch per gestire l'eccezione
 try{
     $qua_1 -> calcolaStipendio();
 } catch (Exception $eccezione_stipendio){

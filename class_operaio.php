@@ -23,7 +23,7 @@ class Operaio extends Dipendente
         $this -> email = "NULL@NULL.COM";
         $this -> telefono = "0000000000";
 
-        echo 'Creo un Dipendente di classe: '. __CLASS__ .  '<br />';
+        echo 'Creo un Dipendente di classe: <strong>'. __CLASS__ .  '</strong><br />';
 
     }
 //     public function __construct()
