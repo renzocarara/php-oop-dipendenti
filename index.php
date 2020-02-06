@@ -17,7 +17,7 @@ $dir_1 -> data_nascita="1956-03-23";
 $dir_1 -> luogo_nascita="Roma";
 $dir_1 -> assunto_il="2018-03-02";
 $dir_1 -> salario_base=50000;
-$dir_1 -> bonus=NULL;
+$dir_1 -> bonus=10000;
 $dir_1 -> telefono="3393672666";
 $dir_1 -> email="paolo.rossi@aziendax.com";
 $dir_1 -> indirizzo="via Piaccapi 7, Boolandia";
@@ -40,7 +40,7 @@ $imp_1 -> data_nascita="1969-03-23";
 $imp_1 -> luogo_nascita="Milano";
 $imp_1 -> assunto_il="2015-09-02";
 $imp_1 -> salario_base=20000;
-// il valore null genera un eccezione sul calcolo dello stipendio
+// il valore null nel campo straordinari genera un'eccezione sul calcolo dello stipendio
 // $imp_1 -> straordinari=null;
 $imp_1 -> straordinari=500;
 $imp_1 -> telefono="3393672666";
@@ -72,6 +72,12 @@ try{
 // -----------------------------------------------------------------------------
 // creo un oggetto di classe Quadro
 $qua_1 = new Quadro("Marco", "Verdi", "FQ8831");
-
+$qua_1 -> stampaDettaglioAnagrafica();
+// racchiudo questa chiamata a funzione in una try & catch
+try{
+    $qua_1 -> calcolaStipendio();
+} catch (Exception $eccezione_stipendio){
+    echo 'Eccezione: ' . $eccezione_stipendio->getMessage() . '<br><br>';
+    }
 
  ?>
