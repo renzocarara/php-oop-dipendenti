@@ -18,6 +18,7 @@ class Dipendente
         $this -> cognome = $_cognome;
         $this -> nome = $_nome;
         $this -> matricola = $_matricola;
+
     }
 
     public function calcolaStipendio()

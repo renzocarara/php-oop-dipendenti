@@ -10,14 +10,16 @@ class Quadro extends Dipendente
     public function __construct($_cognome, $_nome, $_matricola)
     {
         // cognome e  nome sono attributi della trait 'Persona'
-        // matricola è un attributo della classe 'Dipendente'
-        $this -> cognome = $_cognome;
-        $this -> nome = $_nome;
-        $this -> matricola = $_matricola;
+        // matricola è un attributo della classe padre 'Dipendente'
+        // richiamo il costruttore della classe padre con i suoi parametri
+        parent::__construct($_cognome, $_nome, $_matricola);
 
         $this -> data_nascita = "non presente";
         $this -> email = "NULL@NULL.COM";
         $this -> telefono = "0000000000";
+
+        echo 'Creo un Dipendente di classe: '. __CLASS__ .  '<br />';
+
 
     }
 }
