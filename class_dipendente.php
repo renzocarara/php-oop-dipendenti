@@ -23,7 +23,7 @@ class Dipendente
     public function calcolaStipendio()
     {
          if (!is_numeric($this -> salario_base) || !is_numeric($this -> straordinari)) {
-            throw new Exception("C'è stato un problema di contabilità!");
+            throw new Exception("C'è stato un problema di contabilità sul calcolo stipendio");
          }
          else {
              $stipendio = $this -> salario_base + $this -> straordinari;

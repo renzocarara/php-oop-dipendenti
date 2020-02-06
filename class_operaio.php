@@ -19,7 +19,7 @@ class Operaio extends Dipendente
         $this -> nome = $_nome;
         $this -> matricola = $_matricola;
 
-        $this -> data_nascita = "0000-00-00";
+        $this -> data_nascita = "non presente";
         $this -> email = "NULL@NULL.COM";
         $this -> telefono = "0000000000";
 

@@ -17,7 +17,7 @@ $dir_1 -> data_nascita="1956-03-23";
 $dir_1 -> luogo_nascita="Roma";
 $dir_1 -> assunto_il="2018-03-02";
 $dir_1 -> salario_base=50000;
-$dir_1 -> bonus=10000;
+$dir_1 -> bonus=NULL;
 $dir_1 -> telefono="3393672666";
 $dir_1 -> email="paolo.rossi@aziendax.com";
 $dir_1 -> indirizzo="via Piaccapi 7, Boolandia";
@@ -25,11 +25,11 @@ $dir_1 -> indirizzo="via Piaccapi 7, Boolandia";
 $dir_1 -> stampaDettaglioAnagrafica();
 $dir_1 -> stampaDettaglioContatti();
 
+// racchiudo questa chiamata a funzione in una try & catch
 try{
-    // racchiudo questa chiamata a funzione in una try & catch
     $dir_1 -> calcolaStipendio();
 } catch (Exception $eccezione_stipendio){
-    echo 'Eccezione: ' . $eccezione_stipendio->getMessage();
+    echo 'Eccezione: ' . $eccezione_stipendio->getMessage() . '<br><br>';
     }
 
 // -----------------------------------------------------------------------------
@@ -46,15 +46,32 @@ $imp_1 -> straordinari=500;
 $imp_1 -> telefono="3393672666";
 $imp_1 -> email="franco.nero@aziendax.com";
 $imp_1 -> indirizzo="via Laravel 10, Boolandia";
-// stampo delgli attributi specifici di Persona
+// stampo gli attributi specifici di Persona
 $imp_1 -> stampaDettaglioAnagrafica();
 $imp_1 -> stampaDettaglioContatti();
 
+// racchiudo questa chiamata a funzione in una try & catch
 try{
-    // racchiudo questa chiamata a funzione in una try & catch
     $imp_1 -> calcolaStipendio();
 } catch (Exception $eccezione_stipendio){
-    echo 'Eccezione: ' . $eccezione_stipendio->getMessage();
+    echo 'Eccezione: ' . $eccezione_stipendio->getMessage() . '<br><br>';
     }
+
+// -----------------------------------------------------------------------------
+// creo un oggetto di classe Operaio
+$ope_1 = new Operaio("Giorgio", "Giallo", "DD9411");
+
+// stampo gli attributi anagrafici
+$ope_1 -> stampaDettaglioAnagrafica();
+// racchiudo questa chiamata a funzione in una try & catch
+try{
+    $ope_1 -> calcolaStipendio();
+} catch (Exception $eccezione_stipendio){
+    echo 'Eccezione: ' . $eccezione_stipendio->getMessage() . '<br><br>';
+    }
+// -----------------------------------------------------------------------------
+// creo un oggetto di classe Quadro
+$qua_1 = new Quadro("Marco", "Verdi", "FQ8831");
+
 
  ?>
