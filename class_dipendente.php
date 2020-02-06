@@ -27,7 +27,7 @@ class Dipendente
          }
          else {
              $stipendio = $this -> salario_base + $this -> straordinari;
-             echo 'Stipendio dipendente: ' . $stipendio . '€';
+             echo 'Stipendio dipendente: ' . $stipendio . '€' . '<br><br>';
          }
     }
 }

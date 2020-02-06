@@ -24,16 +24,17 @@ $dir_1 -> indirizzo="via Piaccapi 7, Boolandia";
 // stampo delgli attributi specifici di Persona
 $dir_1 -> stampaDettaglioAnagrafica();
 $dir_1 -> stampaDettaglioContatti();
-// try{
-//     // racchiudo questa chiamata a funzione in una try & catch
-//     $dir_1 -> calcolaStipendio();
-// } catch (Exception $eccezione_stipendio){
-//     echo 'Eccezione: ' . $eccezione_stipendio->getMessage();
-//     }
+
+try{
+    // racchiudo questa chiamata a funzione in una try & catch
+    $dir_1 -> calcolaStipendio();
+} catch (Exception $eccezione_stipendio){
+    echo 'Eccezione: ' . $eccezione_stipendio->getMessage();
+    }
 
 // -----------------------------------------------------------------------------
 // creo un oggetto di classe Impiegato
-$imp_1 = new Dirigente("Franco", "Nero", "CC9459");
+$imp_1 = new Impiegato("Franco", "Nero", "CC9459");
 // valorizzo alcuni attributi della classe Impiegato non inizializzati col costruttore
 $imp_1 -> data_nascita="1969-03-23";
 $imp_1 -> luogo_nascita="Milano";
