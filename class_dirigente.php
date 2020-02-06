@@ -21,10 +21,15 @@ class Dirigente extends Dipendente
 
     }
 
-    public function stampaDettagliPosizione() {
-
-        //??
-
-    }
+    // public function calcolaStipendio()
+    // {
+    //      if (!is_numeric($this -> salario_base) || !is_numeric($this -> straordinari)) {
+    //         throw new Exception("C'è stato un problema di contabilità!");
+    //      }
+    //      else {
+    //          $stipendio = $this -> salario_base + $this -> bonus;
+    //          echo 'Stipendio dirigente: ' . $stipendio . '€';
+    //      }
+    // }
 }
  ?>

@@ -11,7 +11,7 @@ class Dipendente
     public $reparto;
     public $tipo_contratto;
     public $titolo_studio;
-    public $stipendio;
+    public $salario_base;
 
     public function __construct($_cognome, $_nome, $_matricola)
     {
@@ -22,9 +22,13 @@ class Dipendente
 
     public function calcolaStipendio()
     {
-
-        // echo 'Data ultimo ordine: ' . $this->data_ultimo_ordine . '<br><br>';
+         if (!is_numeric($this -> salario_base) || !is_numeric($this -> straordinari)) {
+            throw new Exception("C'è stato un problema di contabilità!");
+         }
+         else {
+             $stipendio = $this -> salario_base + $this -> straordinari;
+             echo 'Stipendio dipendente: ' . $stipendio . '€';
+         }
     }
-
 }
 ?>
