@@ -11,8 +11,10 @@ class Impiegato extends Dipendente
 
     // caratteristiche comuni alle classi Impiegato e Operaio
     use Imp_Op;
+    public $ufficio;
     public $quadro_responsabile;
     public $trasferte;
+
 
     public function __construct($_cognome, $_nome, $_matricola)
     {

@@ -15,6 +15,8 @@ class Operaio extends Dipendente
     public $qualifica;
     public $specializzazione;
     public $turni;
+    public $reparto;
+
 
     public function __construct($_cognome, $_nome, $_matricola)
     {
