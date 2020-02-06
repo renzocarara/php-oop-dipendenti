@@ -23,8 +23,8 @@ $dir_1 -> telefono="3393672666";
 $dir_1 -> email="paolo.rossi@aziendax.com";
 $dir_1 -> indirizzo="via Piaccapi 7, Boolandia";
 // stampo gli attributi specifici di Persona
-$dir_1 -> stampaDettaglioAnagrafica();
-$dir_1 -> stampaDettaglioContatti();
+$dir_1 -> stampaAnagrafica();
+$dir_1 -> stampaContatti();
 
 // racchiudo questa chiamata a funzione in una try & catch per gestire l'eccezione
 try{
@@ -48,8 +48,8 @@ $imp_1 -> telefono="3393672666";
 $imp_1 -> email="franco.nero@aziendax.com";
 $imp_1 -> indirizzo="via Laravel 10, Boolandia";
 // stampo gli attributi specifici di Persona
-$imp_1 -> stampaDettaglioAnagrafica();
-$imp_1 -> stampaDettaglioContatti();
+$imp_1 -> stampaAnagrafica();
+$imp_1 -> stampaContatti();
 
 // racchiudo questa chiamata a funzione in una try & catch per gestire l'eccezione
 try{
@@ -63,7 +63,7 @@ try{
 $ope_1 = new Operaio("Giorgio", "Giallo", "DD9411");
 
 // stampo gli attributi anagrafici
-$ope_1 -> stampaDettaglioAnagrafica();
+$ope_1 -> stampaAnagrafica();
 // racchiudo questa chiamata a funzione in una try & catch per gestire l'eccezione
 try{
     $ope_1 -> calcolaStipendio();
@@ -73,7 +73,7 @@ try{
 // -----------------------------------------------------------------------------
 // creo un oggetto di classe Quadro
 $qua_1 = new Quadro("Marco", "Verdi", "FQ8831");
-$qua_1 -> stampaDettaglioAnagrafica();
+$qua_1 -> stampaAnagrafica();
 // racchiudo questa chiamata a funzione in una try & catch per gestire l'eccezione
 try{
     $qua_1 -> calcolaStipendio();

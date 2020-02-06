@@ -5,7 +5,6 @@ include_once 'class_dipendente.php';
 
 class Quadro extends Dipendente
 {
-
     public $area;
     public $rif_dirigente;
     public $num_impiegati;

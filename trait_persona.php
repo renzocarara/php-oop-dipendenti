@@ -15,14 +15,14 @@ trait Persona
     public $telefono;
     public $indirizzo;
 
-    public function stampaDettaglioAnagrafica()
+    public function stampaAnagrafica()
     {
         echo 'Cognome: ' . $this->cognome . '<br>';
         echo 'Nome: ' . $this->nome . '<br>';
         echo 'Data di nascita: ' . $this->data_nascita . '<br>';
         echo 'Luogo di nascita: ' . $this->luogo_nascita . '<br>';
     }
-    public function stampaDettaglioContatti()
+    public function stampaContatti()
     {
         echo 'Telefono: ' . $this->telefono . '<br>';
         echo 'Indirizzo: ' . $this->indirizzo . '<br>';
